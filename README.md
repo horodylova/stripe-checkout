@@ -46,7 +46,31 @@ STRIPE_WEBHOOK_SECRET=whsec_...
 
 ## Testing
 
-Use Stripe test card: `4242 4242 4242 4242`
+### Test Cards
+
+Use these Stripe test cards for testing payments:
+
+**Successful payments:**
+- `4242 4242 4242 4242` - Visa (most common)
+- `4000 0566 5566 5556` - Visa (debit)
+- `5555 5555 5555 4444` - Mastercard
+- `3782 822463 10005` - American Express
+- `6011 1111 1111 1117` - Discover
+
+**Declined payments:**
+- `4000 0000 0000 0002` - Card declined
+- `4000 0000 0000 9995` - Insufficient funds
+- `4000 0000 0000 9987` - Lost card
+- `4000 0000 0000 9979` - Stolen card
+
+**3D Secure authentication:**
+- `4000 0027 6000 3184` - Requires authentication
+
+**International cards:**
+- `4000 0000 0000 4954` - GB card
+- `4000 0000 0000 1091` - CA card
+
+**Use any future expiry date (e.g., 12/34) and any 3-digit CVC for testing.**
 
 ## Live Demo
 
